@@ -6,7 +6,6 @@ import time
 import signal
 import sys
 import subprocess
-import pigpio
 from sensor_msgs.msg import Joy
 from std_msgs.msg import Header
 from gcv_motor_driver.msg import GCVControl

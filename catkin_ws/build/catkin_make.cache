@@ -1,0 +1,2 @@
+gcv:gcv_joy_mapper:gcv_motor_driver
+-DCATKIN_DEVEL_PREFIX=/home/edf/ROS/edf/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/edf/ROS/edf/catkin_ws/install -G Unix Makefiles

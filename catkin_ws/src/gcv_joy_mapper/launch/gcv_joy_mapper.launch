@@ -1,0 +1,7 @@
+<launch>
+    <arg name="pkg_name" value="gcv_joy_mapper"/>
+    <arg name="node_name" default="gcv_joy_mapper_node"/>
+
+    <node name="$(arg node_name)" pkg="$(arg pkg_name)" type="$(arg node_name).py">
+    </node>
+</launch>

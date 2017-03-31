@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/edf/ROS/edf/catkin_ws/devel/setup.sh

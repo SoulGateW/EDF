@@ -1,0 +1,7 @@
+<launch>
+    <arg name="pkg_name" value="gcv_motor_driver"/>
+    <arg name="node_name" default="gcv_motor_driver_node_rpi"/>
+
+    <node name="$(arg node_name)" pkg="$(arg pkg_name)" type="$(arg node_name).py">
+    </node>
+</launch>

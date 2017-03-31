@@ -1,0 +1,8 @@
+prefix=/home/edf/ROS/edf/catkin_ws/devel
+
+Name: gcv_motor_driver
+Description: Description of gcv_motor_driver
+Version: 0.0.5
+Cflags: -I/home/edf/ROS/edf/catkin_ws/devel/include
+Libs: -L/home/edf/ROS/edf/catkin_ws/devel/lib 
+Requires: message_runtime

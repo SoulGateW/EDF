@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find gcv_motor_driver)/launch/gcv_motor_driver_rpi.launch"/>
+  <include file="$(find gcv_joy_mapper)/launch/joystick.launch"/>
+</launch>

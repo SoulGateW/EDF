@@ -1,8 +1,0 @@
-prefix=/home/edf/ROS/edf/catkin_ws/devel
-
-Name: gcv_joy_mapper
-Description: Description of gcv_joy_mapper
-Version: 0.0.1
-Cflags: 
-Libs: -L/home/edf/ROS/edf/catkin_ws/devel/lib 
-Requires: 

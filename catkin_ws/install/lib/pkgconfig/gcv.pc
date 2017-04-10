@@ -1,8 +1,0 @@
-prefix=/home/edf/ROS/edf/catkin_ws/install
-
-Name: gcv
-Description: Description of gcv
-Version: 0.0.1
-Cflags: 
-Libs: -L/home/edf/ROS/edf/catkin_ws/install/lib 
-Requires: 

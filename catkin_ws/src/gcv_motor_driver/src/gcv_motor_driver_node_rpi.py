@@ -87,7 +87,7 @@ if __name__ == '__main__':
     pi.write(GCV_R2, 0)
 
     #gcv_motor_driver_node_rpi node
-    rospy.init_node('gcv_motor_driver_node_rpi', anonymous=True)
+    rospy.init_node("gcv_motor_driver_node_rpi")
     rospy.Subscriber("/gcv_motor_driver",GCVControl,control_callback)
     rospy.spin()
 

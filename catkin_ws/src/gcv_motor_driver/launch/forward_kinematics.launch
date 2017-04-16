@@ -1,0 +1,10 @@
+<launch>
+    <arg name="pkg_name" value="gcv_motor_driver"/>
+    <arg name="node_name" default="gcv_forward_kinematics_node"/>
+
+    <node name="$(arg node_name)" pkg="$(arg pkg_name)" type="$(arg node_name).py" output="screen">
+      <param name="~trim" type="double" value="0.00"/>
+      <param name="~v_gain" type="double" value="0.95"/>
+      <param name="~r_gain" type="double" value="0.90"/>
+    </node>
+</launch>

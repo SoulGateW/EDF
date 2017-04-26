@@ -1,4 +1,12 @@
 <launch>
+  <arg name="mode" default="differential_drive"/>
+  <arg name="joystick_type" default="default"/>
+
   <include file="$(find gcv_motor_driver)/launch/gcv_motor_driver_rpi.launch"/>
-  <include file="$(find gcv_joy_mapper)/launch/joystick.launch"/>
+  <include file="$(find gcv_motor_driver)/launch/forward_kinematics.launch"/>
+  <include file="$(find gcv_joy_mapper)/launch/joystick.launch">
+    <arg name="mode" value="$(arg mode)"/>
+    <arg name="joystick_type" default="$(arg joystick_type)"/>
+  </include>
+
 </launch>

@@ -1,7 +1,11 @@
 <launch>
     <arg name="pkg_name" value="gcv_joy_mapper"/>
     <arg name="node_name" default="gcv_joy_mapper_node"/>
+    <arg name="mode" default="differential_drive"/>
+    <arg name="joystick_type" default="default"/>
 
-    <node name="$(arg node_name)" pkg="$(arg pkg_name)" type="$(arg node_name).py">
+    <node name="$(arg node_name)" pkg="$(arg pkg_name)" type="$(arg node_name).py" output="screen">
+        <param name="~control_mode" type="string" value="$(arg mode)" />
+        <param name="~joystick_type" type="string" value="$(arg joystick_type)" />
     </node>
 </launch>

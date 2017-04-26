@@ -1,0 +1,21 @@
+<!----------------------------------------------------------------------------->
+<!--                            GCV ULTIMATA                                 -->
+<!-- This file launches the GCV robot.                                       -->
+<!----------------------------------------------------------------------------->
+<launch>
+ <arg name="usb_cam_framerate" default="20"/>
+ <arg name="mode" default="differential_drive"/>
+ <arg name="joystick_type" default="default"/>
+
+  <!--   Control Node  -->
+ <include file="$(find gcv)/launch/gcv_control.launch">
+   <arg name="mode" default="$(arg mode)"/>
+   <arg name="joystick_type" default="$(arg joystick_type)"/>
+ </include>
+
+  <!-- USB Camera Node -->
+ <include file="$(find gcv)/launch/usb_camera.launch">
+    <arg name="framerate" value="$(arg usb_cam_framerate)"/>
+ </include>
+
+</launch>

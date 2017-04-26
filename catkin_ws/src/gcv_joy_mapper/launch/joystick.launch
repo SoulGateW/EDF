@@ -1,4 +1,10 @@
 <launch>
+  <arg name="mode" default="differential_drive"/>
+  <arg name="joystick_type" default="default"/>
+
   <include file="$(find gcv_joy_mapper)/launch/joy_node.launch"/>
-  <include file="$(find gcv_joy_mapper)/launch/gcv_joy_mapper.launch"/>
+  <include file="$(find gcv_joy_mapper)/launch/gcv_joy_mapper.launch">
+    <arg name="mode" default="$(arg mode)"/>
+    <arg name="joystick_type" default="$(arg joystick_type)"/>
+  </include>
 </launch>
